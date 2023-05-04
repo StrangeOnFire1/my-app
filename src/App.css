@@ -1,0 +1,125 @@
+body{
+    background-color:#ffecec;
+}
+
+/* contact-section */
+
+#help-contact{
+    background-color: rgb(18, 124, 186);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5% 10%;
+}
+.help-des{
+    width: 40%;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    margin-right: 4vh;
+}
+.help-des > h2{
+    font-family: 'Montserrat', sans-serif;
+}
+.help-des > h2 span{
+    color: gold;
+}
+.help-des > h1{
+    font-family: 'Montserrat', sans-serif;
+}
+#help-contact > form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 1rem;
+    background-color: white;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0,0.4);
+    color: black;
+}
+#help-contact > form > h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+#help-contact > form > input{
+    background-color:rgba(128, 128, 128, 0.25) ;
+    color: black;
+    border: 0;
+    margin: auto .5rem;
+    border-radius: 5px;
+    padding: .2rem;
+    padding-left: .3rem;
+    font-size: 1.1rem;
+}
+#help-contact > form > input:last-child{
+    background-color:gold ;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+#help-contact > form > input:last-child:hover{
+    background-color:rgba(0, 0, 0, 0.509) ;
+    color: gold;
+}
+#help-contact > form > textarea{
+    background-color:rgba(128, 128, 128, 0.25) ;
+    color: black;
+    border: 0;
+    margin: auto .5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+@media (max-width:1030px) {
+    #help-contact > form{
+        width: 40%;
+    }  
+}
+@media (max-width:760px) {
+    .help-des{
+        width: 52%;
+        border-bottom: 2px solid white;
+        padding: 5px;
+        margin-right: 4vh;
+    }
+    #help-contact > form{
+        width: 45%;
+    }  
+}
+@media (max-width:600px) {
+    #help-contact{
+       flex-direction: column;
+        padding: 5% 10%;
+        gap: 5vh;
+    }
+    .help-des > h2{
+        font-size: 2rem;
+    }
+    .help-des > h1{
+        font-size: 2.5rem;
+    }
+    .help-des{
+        width: 80%;
+    }
+    #help-contact > form{
+        width: 60%;
+    }  
+}
+@media (max-width:400px) {
+    #help-contact{
+        gap: 5vh;
+    }
+    .help-des > h2{
+        font-size: 1.7rem;
+    }
+    .help-des > h1{
+        font-size: 2.2rem;
+    }
+    .help-des{
+        width: 100%;
+    }
+    #help-contact > form{
+        width: 85%;
+    }  
+}
